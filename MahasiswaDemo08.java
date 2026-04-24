@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class MahasiswaDemo08 {
     public static void main(String[] args) {
         
-        StackTugasMahasiswa stack = new StackTugasMahasiswa(5);
+        StackTugasMahasiswa08 stack = new StackTugasMahasiswa08 (5);
         Scanner scan = new Scanner(System.in);
         int pilih; 
         
