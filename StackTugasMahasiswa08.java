@@ -68,6 +68,7 @@ public class StackTugasMahasiswa08 {
         }
         System.out.println("");
     }
+
     // method peekBottom
     public Mahasiswa08 peekBottom() {
         if (!isEmpty()) {
@@ -77,8 +78,28 @@ public class StackTugasMahasiswa08 {
             return null;
         }
     }
+    
     // method hitungTugas
     public int hitungTugas() {
         return top + 1;
-}
-}
+
+    }
+
+    // method konversiDesimalKeBiner
+    public String konversiDesimalKeBiner (int nilai) {
+        StackKonversi08 stack = new StackKonversi08();
+        while (nilai > 0) {
+        int sisa = nilai % 2;
+        stack.push(sisa);
+        nilai = nilai / 2;
+        }
+
+        String biner = new String();
+        while (!stack. isEmpty()) {
+        biner += stack.pop();
+        }
+        return biner;
+        }
+    }
+
+
