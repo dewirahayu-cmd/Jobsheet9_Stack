@@ -77,4 +77,8 @@ public class StackTugasMahasiswa08 {
             return null;
         }
     }
+    // method hitungTugas
+    public int hitungTugas() {
+        return top + 1;
+}
 }
